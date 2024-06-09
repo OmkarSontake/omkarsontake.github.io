@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+.glow:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 200%;
+  border-radius: 0.375rem;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.glow:hover:before {
+  filter: blur(15px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.glow:hover {
+  animation: animate 8s linear infinite;
+}
+
+.Typewriter {
+  display: inline;
+}
+
+.glow-2:before {
+  content: "";
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  bottom: -1px;
+  left: -1px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 200%;
+  border-radius: 0.375rem;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+
+.glow-2:hover:before {
+  filter: blur(15px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+.glow-2:hover {
+  animation: animate 8s linear infinite;
+}
