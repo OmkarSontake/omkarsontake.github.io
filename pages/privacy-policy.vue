@@ -31,7 +31,7 @@
       </ul>
   
       <h2>Disclosure of Your Information</h2>
-  
+   
       <p>
         We may share your personal information with third-party service providers
         who perform services for us or on our behalf, such as payment processing,
