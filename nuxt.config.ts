@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   gtag: {
     id: 'G-SJFSR2JHJE'
   },
-  ssr: false,
+  ssr: true,
   postcss: {
     plugins: {
       tailwindcss: {},
