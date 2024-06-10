@@ -8,7 +8,11 @@
                 <VueWriter :eraseSpeed="50" :typeSpeed="100" 
                     :array="['React.', 'Typescript.', 'Node.', 'Electron.', 'Next.', 'Vue.', 'Nuxt.', 'Python.']" />
             </h2>
-
+            <div>
+                <img src="/headshot.jpg" class="h-40" alt="">
+                <h1>Sontakor@mail.uc.edu</h1>
+            </div>
+            
            
         </div>
     </section>

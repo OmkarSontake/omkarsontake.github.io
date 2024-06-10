@@ -6,6 +6,7 @@ export default defineNuxtConfig({
   gtag: {
     id: 'G-SJFSR2JHJE'
   },
+  
   postcss: {
     plugins: {
       tailwindcss: {},
